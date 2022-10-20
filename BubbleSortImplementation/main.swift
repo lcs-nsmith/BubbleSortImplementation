@@ -27,21 +27,26 @@ print("Unsorted:")
 print(dump(dataSet))
 waitForUserInput()
 
-// One pass through the array to float the highest number to the end
-for v in 0..<dataSet.count - 1 {
-
+//Loop for the array "x" times
+// (however many times there are elements in the array)
+for i in 0..<dataSet.count {
     
-    if dataSet[v] > dataSet[v + 1] {
-        //swap value
-        let virtualRandomAccessMemory = dataSet[v]
-        dataSet[v] = dataSet[v + 1]
-        dataSet[v + 1] = virtualRandomAccessMemory
+    
+    // One pass through the array to float the highest number to the end
+    for j in 0..<dataSet.count - 1 {
+        
+        
+        if dataSet[j] > dataSet[j + 1] {
+            //swap value
+            let virtualRandomAccessMemory = dataSet[j]
+            dataSet[j] = dataSet[j + 1]
+            dataSet[j + 1] = virtualRandomAccessMemory
+        }
     }
+    
+    //print the array after pass
+    print("Array after pass")
+    print(dataSet)
+    waitForUserInput()
+    
 }
-
-//print the array after pass
-print("Array after one pass")
-print(dataSet)
-waitForUserInput()
-
-
