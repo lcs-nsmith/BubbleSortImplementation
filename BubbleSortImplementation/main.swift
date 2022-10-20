@@ -8,6 +8,12 @@
 
 import Foundation
 
+func waitForUserInput() {
+    print("")
+    print("Press return to continue")
+    _ = readLine()
+}
+
 // Create an empty list (array)
 var dataSet: [Int] = []
 
