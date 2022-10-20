@@ -3,6 +3,7 @@
 //  BubbleSortImplementation
 //
 //  Created by Jacobo de Juan Millon on 2022-10-20.
+//  Used by Nathan Smith on 2022-10-20.
 //
 
 import Foundation
