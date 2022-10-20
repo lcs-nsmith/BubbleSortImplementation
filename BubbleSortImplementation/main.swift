@@ -23,4 +23,24 @@ for _ in 1...10 {
 }
 
 // Print the list
+print("Unsorted:")
 print(dump(dataSet))
+waitForUserInput()
+
+// One pass through the array to float the highest number to the end
+for v in 0..<dataSet.count - 1 {
+
+    
+    if dataSet[v] > dataSet[v + 1] {
+        //swap value
+        let virtualRandomAccessMemory = dataSet[v]
+        dataSet[v] = dataSet[v + 1]
+        dataSet[v + 1] = virtualRandomAccessMemory
+    }
+}
+
+//print the array after pass
+print("Array after one pass")
+print(dataSet)
+waitForUserInput()
+
