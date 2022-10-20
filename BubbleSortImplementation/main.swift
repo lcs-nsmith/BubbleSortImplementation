@@ -46,6 +46,7 @@ for i in 0..<dataSet.count {
             dataSet[j + 1] = virtualRandomAccessMemory
             print("values were swapped", terminator: "")
         }
+        print("")
     }
     
     //print the array after passx   x
@@ -54,3 +55,7 @@ for i in 0..<dataSet.count {
     waitForUserInput()
     
 }
+
+///
+///
+///
