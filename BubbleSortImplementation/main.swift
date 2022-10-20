@@ -35,17 +35,21 @@ for i in 0..<dataSet.count {
     // One pass through the array to float the highest number to the end
     for j in 0..<dataSet.count - 1 {
         
-        
+        // Compare left to right value
+        print("Comparison \(j+1)...", terminator: "")
         if dataSet[j] > dataSet[j + 1] {
+        
+            
             //swap value
             let virtualRandomAccessMemory = dataSet[j]
             dataSet[j] = dataSet[j + 1]
             dataSet[j + 1] = virtualRandomAccessMemory
+            print("values were swapped", terminator: "")
         }
     }
     
-    //print the array after pass
-    print("Array after pass")
+    //print the array after passx   x
+    print("Array after \(i + 1) passes")
     print(dataSet)
     waitForUserInput()
     
