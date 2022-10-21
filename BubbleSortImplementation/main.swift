@@ -8,6 +8,8 @@
 
 import Foundation
 
+// this function can be used to slow down the algorithm to see it slowly
+// it is commented out in the code, if you want to slow it down then just comment them back in
 func waitForUserInput() {
     print("")
     print("Press return to continue")
@@ -21,6 +23,8 @@ var dataSet: [Int] = []
 for _ in 1...10 {
     dataSet.append(Int.random(in: 1...100))
 }
+
+// the following was for testing purposes
 //dataSet.append(1)
 //dataSet.append(2)
 //dataSet.append(3)
@@ -35,7 +39,8 @@ for _ in 1...10 {
 // Print the list
 print("Unsorted:")
 print(dump(dataSet))
-waitForUserInput()
+// waitForUserInput()
+
 
 //Loop for the array "x" times
 // (however many times there are elements in the array)
@@ -61,17 +66,19 @@ for i in 0..<dataSet.count {
         print("")
     }
     
+//                                    { inside this bracket, these statements result to the same output
 //    if(shouldBreak) {
 //        break
 //    }
         if shouldBreak == true {
             exit(1)
         }
+//                                     }
     
-    //print the array after passx   x
+    //print the array after pass x
     print("Array after \(i + 1) passes")
     print(dataSet)
-    waitForUserInput()
+//    waitForUserInput()
     
 
 
