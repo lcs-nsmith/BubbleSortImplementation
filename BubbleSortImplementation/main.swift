@@ -84,4 +84,3 @@ for i in 0..<dataSet.count {
 
 }
 
-/// Somehow I have to make the algorithm stop after a pass makes zero
