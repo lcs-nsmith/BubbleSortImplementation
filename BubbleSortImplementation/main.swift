@@ -41,6 +41,9 @@ print("Unsorted:")
 print(dump(dataSet))
 // waitForUserInput()
 
+// Keep track of the start time                                              //
+// When this runs, startime conatins the number of second since Jan, 1 1970 //
+let startTime = Date().timeIntervalSince1970                               //
 
 //Loop for the array "x" times
 // (however many times there are elements in the array)
@@ -67,12 +70,12 @@ for i in 0..<dataSet.count {
     }
     
 //                                    { inside this bracket, these statements result to the same output
-//    if(shouldBreak) {
-//        break
-//    }
-        if shouldBreak == true {
-            exit(1)
-        }
+    if(shouldBreak) {
+        break
+    }
+//        if shouldBreak == true {
+//            exit(1)
+//        }
 //                                     }
     
     //print the array after pass x
@@ -80,7 +83,11 @@ for i in 0..<dataSet.count {
     print(dataSet)
 //    waitForUserInput()
     
-
-
 }
 
+// Get end time
+let endTime = Date().timeIntervalSince1970
+
+// get elapsed time
+let elapsedTime = endTime - startTime
+print("Sort time \(elapsedTime)")
