@@ -20,21 +20,23 @@ func waitForUserInput() {
 var dataSet: [Int] = []
 
 //Populate the list
-for _ in 1...3000 {
-    dataSet.append(Int.random(in: 1...200000))
+for _ in 1...10 {
+    dataSet.append(Int.random(in: 1...10000))
 }
 
 // the following was for testing purposes
 //dataSet.append(10)
 //dataSet.append(9)
 //dataSet.append(8)
-//dataSet.append(4)
-//dataSet.append(5)
-//dataSet.append(6)
 //dataSet.append(7)
-//dataSet.append(8)
-//dataSet.append(9)
-//dataSet.append(10)
+//dataSet.append(6)
+//dataSet.append(6)
+//dataSet.append(5)
+//dataSet.append(4)
+//dataSet.append(3)
+//dataSet.append(2)
+//dataSet.append(1)
+//dataSet.append(0)
 
 // Print the list
 print("Unsorted:")
